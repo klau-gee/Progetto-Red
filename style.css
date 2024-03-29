@@ -1,0 +1,352 @@
+body{
+    margin: 0;
+    font-family: 'Nova Square', sans-serif;
+    background-color: #ececec;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.font-primary{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: lighter;
+}
+
+.font-secondary{
+    font-family: 'Nova Square', sans-serif;
+}
+
+:root{
+    --firstbackground: #ececec;
+    --secondbackground: #ececec;
+    --thirdbackround: #8B0203;
+    --customgrey: rgb(108, 117, 126);
+}
+
+
+.bg-lightgrey{
+    background-color: var(--firstbackground) !important;
+}
+
+.bg-customred{
+    background-color: var(--thirdbackround);
+}
+
+.text-customred{
+    color: #8B0203;
+}
+
+.text-customgrey{
+    color: var(--customgrey);
+}
+
+.btn-customred{
+    border: solid, 1px, #8B0203;
+}
+
+
+.navbarposition{
+    width: 400px !important;
+}
+
+.margin-left{
+    position: relative;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+header{
+    width: 100%;
+    position: relative;
+    margin-top: 170px;
+    background-color: #ececec !important;
+}
+
+#pLor{
+    color: rgb(122, 122, 122);
+    font-weight: 600;
+    font-style: oblique;
+    text-align: center;
+    position: relative;
+}
+
+#pLor::before {
+    position: absolute;
+    content: ' " ';
+    color: darkred;
+    font-size: 60px;
+    margin: -55px 0 0 -12px;
+    rotate: 185deg;
+}
+
+#pLor::after {
+    position: absolute;
+    content: ' " ';
+    color: darkred;
+    font-size: 60px;
+    margin: -10px 0 0 -8px;
+    rotate: 5deg;
+}
+
+.background{
+    background: linear-gradient(rgba(236, 236, 236, 0.9451), rgba(198, 127, 127, 0.272)), url(./media/switzerland-862870_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+h1{
+    width: 100%;
+    font-size: 80px;
+    letter-spacing: 50px;
+    color: #8B0203;
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+/* da sistemare */
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 30px;
+    }
+    .underLine{
+        width: 3px;
+        border-bottom: solid 1px #8B0203;
+        position: relative;
+    }
+    
+    .underLine::after{
+        position: absolute;
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: white;
+        /* right: 100px;
+        top: 20px; */
+        border: solid 1px #8B0203;
+    }
+
+}
+
+
+
+.margin-section1{
+    margin-top: 250px;
+}
+
+.underLine{
+    width: 220px;
+    border-bottom: solid 3px #8B0203;
+    position: relative;
+}
+
+.underLine::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    right: 100px;
+    top: 63px;
+    border: solid 2px #8B0203;
+}
+
+/* button */
+.buttonMargin{
+    margin-top: 230px;
+}
+
+.btn-lg{
+    width: 220px !important;
+    height: 45px !important;
+}
+
+.pBtn{
+    font-size: 20px;
+}
+
+/* image */
+.img-mountain{
+    width: 100% !important; 
+    position: absolute;
+    justify-self: flex-start;
+    align-self: flex-end;
+}
+
+.img-trees{
+    width: 100% !important;
+    position: absolute;
+    justify-self: flex-start;
+    align-self: baseline;
+}
+
+
+.img-timeline{
+    position: relative;
+    width: 100% !important; 
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -440px;
+}
+
+
+.margin-timeline{
+    margin-top: 189px;
+}
+
+.p-Time{
+    width: 100%;
+}
+
+.time-Line{
+    border-left: solid 4px #8B0203;
+    position: relative;
+    padding-left: 15px;
+    margin-left: 0px;
+    height: 220px;
+}
+
+.time-Line::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    left: -12px;
+    top: -2px;
+    border: solid 2px #8B0203;
+}
+
+.ul-mar{
+    margin-bottom: 40px;
+}
+
+.list-style{
+    list-style-type: none;
+} 
+
+.h-card {
+    margin-left: 80px;
+    margin-top: 160px;
+}
+
+.card-team{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 3px solid #8B0203;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.border-card{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 0px;
+    background-image: url(https://picsum.photos/160);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-card{
+    font-size: 12px;
+}
+
+.link-social{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.img-benefit{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid #8B0203;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-img-border1{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 0px;
+    background-image: url(./media/fog.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-img-border2{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 0px;
+    background-image: url(./media/mountain-547363_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marFooter{
+    margin-top: 0px;
+    padding-bottom: 50px;
+    background-color: #8B0203;
+    
+}
+
+.fs-footer{
+    font-family:'Rajdhani', sans-serif;;
+}
+
+.img-footer{
+    width: 100%;
+}
+
+@media screen {
+    .underLine{
+        width: 220px;
+        border-bottom: solid 3px #8B0203;
+        position: relative;
+    }
+    
+    .underLine::after{
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        right: 100px;
+        top: 63px;
+        border: solid 2px #8B0203;
+    }
+}
+
+
